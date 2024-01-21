@@ -99,6 +99,13 @@ void setup() {
 	motor.useMonitoring(Serial);
 //	motor.monitor_downsample = 0; // initially disable real-time monitoring
 
+// BLDCMotor( int pp , float R)
+// - pp            - pole pair number
+// - R             - motor phase resistance
+// - KV            - motor kv rating (rmp/v)
+// - L             - motor phase inductance
+
+
 	// initialise motor
 	motor.init();
 	// align encoder and start FOC
